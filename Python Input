@@ -1,2 +1,2 @@
-length=input("")
+length=input()
 print(len(length))
