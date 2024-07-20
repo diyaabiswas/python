@@ -1,0 +1,6 @@
+fruits=["Strawberries","Apples","Grapes","Peaches","Cherries","Pears"]
+vegetables=["Spinach","Kale","Nectarines","Tomatoes","Celery","Potatoes"]
+print(fruits)
+dirty_dozon=[fruits,vegetables]
+print(dirty_dozon[0])
+print(dirty_dozon[1][1])

@@ -1,0 +1,9 @@
+names=['A','B','X','Y','Z']
+names=names_string.split(", ")
+
+import random
+
+length_name=len(names)
+fetch_name=random.randint(0,length_name-1)
+
+print(f"{names[fetch_name]} is going to buy the meal today!" )
