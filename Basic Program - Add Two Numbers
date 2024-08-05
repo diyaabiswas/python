@@ -1,0 +1,9 @@
+# Python program to add two numbers
+
+Num1=int(input("Enter first number: "))
+Num2=int(input("Enter second number: "))
+
+#Adding numbers
+sum=0
+sum=Num1+Num2
+print(f"Total sum is {sum}")
