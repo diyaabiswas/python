@@ -1,0 +1,11 @@
+# Maximum of two numbers in Python
+
+num1=int(input("Enter first number :"))
+num2=int(input("Enter second number :"))
+
+if num1>num2:
+  print(f"First number is greater than second number  {num1} > {num2}")
+elif num1<num2:
+  print(f"Second number is greater than first number  {num2} > {num1}")
+else:
+  print(f"both are equal {num1} = {num2}")
