@@ -1,0 +1,20 @@
+def calculate_love_score(name1, name2):
+    name_string=name1+name2
+    name1_list = list(name_string)
+
+    T = name1_list.count('t')
+    R = name1_list.count('r')
+    U = name1_list.count('u')
+    E = name1_list.count('e')
+    total1=T+R+U+E
+    L = name1_list.count('l')
+    O = name1_list.count('o')
+    V = name1_list.count('v')
+    E = name1_list.count('e')
+    total2=L+O+V+E
+    lovescore=str(total1)+str(total2)
+
+    print(lovescore)
+
+
+calculate_love_score("Kanye West", "Kim Kardashian")
