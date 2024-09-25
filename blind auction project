@@ -1,0 +1,50 @@
+
+import art
+
+print(art.logo)
+should_continue=True
+bidder_dictionary={}
+
+
+# TODO-1: Ask the user for input
+while should_continue:
+
+    name=input("What is your name?:")
+    bid_amount=int(input("What is your bid?: $"))
+# TODO-2: Save data into dictionary {name: price}
+
+    bidder_dictionary[name]=bid_amount
+    print(bidder_dictionary)
+
+
+    def find_out_highest_bidders():
+        highest_amount = 0
+        winner = ''
+        for bidder_name in bidder_dictionary:
+            if bidder_dictionary[bidder_name] > highest_amount:
+                highest_amount = bidder_dictionary[bidder_name]
+                winner = bidder_name
+        print(f"Highest bidder is {winner} with bid amount {highest_amount}")
+# TODO-3: Whether if new bids need to be added
+    bidders=input("Are there any other bidders? Type 'yes or 'no'.").lower()
+
+
+    if bidders == 'yes':
+        print("\n" * 20)
+    elif bidders == 'no':
+        should_continue = False
+        find_out_highest_bidders()
+    else:
+        should_continue = False
+        print("Retry")
+
+# TODO-4: Compare bids in dictionary
+
+
+
+
+
+
+
+
+
