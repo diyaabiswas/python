@@ -1,0 +1,68 @@
+import art
+
+def add(n1, n2):
+    return n1 + n2
+
+def subtract(n1, n2):
+    return n1 - n2
+
+def multiply(n1, n2):
+    return n1 * n2
+
+def divide(n1, n2):
+    return n1 / n2
+
+def calculator():
+    print(art.logo)
+    operations={"+": add,"-": subtract,"*": multiply,"/": divide,}
+    should_continue=True
+    num1=float(input("What is the first number?: "))
+    while should_continue:
+
+        for symbol in operations:
+            print(symbol)
+        math_operation=input("Pick an operation:")
+        num2=float(input("What is the next number?: "))
+        answer=operations[math_operation](num1,num2)
+        print(f"{num1} {math_operation} {num2} = {answer}")
+        choice = input(f" Type 'y' to continue calculating with {answer} or type 'n' to start a new calculation ").lower()
+
+        if choice == 'y':
+            num1 = answer
+        else:
+            print("\n" * 20)
+            should_continue=False
+            calculator()
+
+calculator()
+
+
+#
+# def calculator(num1,op,num2):
+#     return f"{operations[op](num1,num2)}"
+#
+# calculation=calculator(num1=first_num,op=math_operation,num2=second_num)
+# choice = input("Do you want to continue type 'yes' or 'no' ").lower()
+# while should_continue:
+#     first_num = calculation
+#     print('''+
+#     -
+#     *
+#     /
+#     ''')
+#     math_operation = input("Pick an operation:")
+#     second_num = int(input("What is the next number?: "))
+#
+#     if choice == 'no':
+#         should_continue =False
+#         first_num = int(input("What is the first number?: "))
+#         print('''+
+#         -
+#         *
+#         /
+#         ''')
+#         math_operation = input("Pick an operation:")
+#         second_num = int(input("What is the next number?: "))
+#
+#
+#
