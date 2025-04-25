@@ -1,0 +1,19 @@
+year = int(input("Enter a year: "))
+
+#
+# Write your code here.
+#	
+if year >= 1582:
+    if year % 4 != 0:
+        print("common year")
+    else:
+        if year % 100 == 0:
+            if year % 400 == 0:
+                print("leap year")
+            else:
+                print("common year")
+        else:
+            print("common year")
+
+else:
+    print("Not within the Gregorian calendar period")
