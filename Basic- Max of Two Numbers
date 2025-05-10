@@ -1,4 +1,4 @@
-## The Sum of Two Numbers
+## The Max of Two Numbers
 num1=int(input("enter first number: "))
 num2=int(input("enter second number: "))
 number_list=[]
@@ -7,4 +7,19 @@ number_list.append(num2)
 print(number_list)
 larger_number=0
 larger_number=max(number_list)
+print(f"The max is : {larger_number}")
+
+
+#Alternate approach without Max method
+
+
+num1=int(input("enter first number: "))
+num2=int(input("enter second number: "))
+
+larger_number=0
+if num1 > larger_number:
+    larger_number=num1
+if num2 > larger_number:
+    larger_number=num2
+
 print(f"The max is : {larger_number}")
